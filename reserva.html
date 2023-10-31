@@ -1,40 +1,77 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Formulario de Reserva de Restaurante</title>
-</head>
 
-<header><img src="Sin título-1.png" alt="logo"></header>
+<head>
+    <title>Formulario de Contacto del Restaurante</title>
+    <link rel="stylesheet" type="text/css" href="styleMenus.css">
+</head>
+<header>
+
+
+    <div class="circle"><img src="Sin título-1.png" alt="logo"></div>
+
+</header>
+<div class="botones">
+    <button class="home" onclick="location.href='Home.html'"><strong>HOME</strong></button>
+    <button class="botonesDerecha" onclick="location.href='contactanos.html'"><strong>Contactanos</strong></button>
+    <button class="botonesDerecha" onclick="location.href='menu.html'"><strong>Menu</strong></button>
+    <button class="botonesDerecha" onclick="location.href='reserva.html'"><strong>Reserva</strong></button>
+    <button class="botonesDerecha" onclick="location.href='sobreNos.html'"><strong>Acerca de...</strong></button>
+
+</div>
+
+
 <body>
-    <h2>Formulario de Reserva de Restaurante</h2>
-    <form action="/submit-reservation" method="post">
+    <div class="comida"><img src="Diamant-191217-005.jpg" alt="" class="comida1">
+        <img src="Diamant-191217-053.jpg" alt="" class="comida2">
+    </div>
+    <form action="Home.html" method="get">
+        <h2>Formulario de Reserva del Restaurante</h2>
         <label for="name">Nombre:</label><br>
         <input type="text" id="name" name="name" required><br>
-        <label for="email">Correo electrónico:</label><br>
-        <input type="email" id="email" name="email" required><br>
         <label for="phone">Teléfono:</label><br>
         <input type="tel" id="phone" name="phone"><br>
-        <label for="date">Fecha de reserva:</label><br>
-        <input type="date" id="date" name="date" required><br>
-        <label for="time">Hora de reserva:</label><br>
-        <input type="time" id="time" name="time" required><br>
-        <label for="guests">Número de invitados:</label><br>
-        <input type="number" id="guests" name="guests" min="1" required><br>
-        <input type="submit" value="Reservar">
+        <label for="message">Reserva:</label><br>
+        <input type="date" id="date" name="date"></label><br>
+        <input type="time" id="date" name="date"></label>
+        <input type="submit" value="Enviar" class="submitMenu">
+
     </form>
+
 </body>
 
 <footer>
+    <div class="primera">
+        <div class="direccion">
+            <p>Gran Via de les Corts Catalanes,
+                572, 08011 Barcelona</p>
+        </div>
+        <div class="redesLogo">
+            <a href="http://www.instagram.com"><img src="social_instagram_43 (2).png" alt="instagram"
+                    class="instagram"></a>
+            <a href="http://www.facebook.com"><img src="social_facebook_fb_35.png" alt="facebook" class="facebook"></a>
+        </div>
+        <div class="horario">
+            <p>HORARIO ESPACIO GASTRONÓMICO <br>
+                Y TIENDA 13.00 – 16.00H 19.00 – 24.00H <br>
+                CERRADO DOMINGO CENA Y LUNES TODO EL DÍA</p>
+        </div>
+    </div>
 
-    <div class="direccion"><p>Gran Via de les Corts Catalanes, 
-        572, 08011 Barcelona</p></div>
-    <a href="http://www.instagram.com"><img src="social_instagram_43.png" alt="instagram"></a>
-    <a href="http://www.facebook.com"><img src="social_facebook_fb_35.png" alt="facebook"></a>
-     
-    <div class="horario"><p>HORARIO ESPACIO GASTRONÓMICO
-        Y TIENDA13.00 – 16.00 H19.00 – 24.00 H
-        CERRADO DOMINGO CENA Y LUNES TODO EL DÍA</p></div>
-    <div class="barra"><br></div>
-    <img src="Sin título-1.png" alt="logoFondoNegro">
-    </footer>
+    <div class="barra">
+        <hr>
+    </div>
+
+    <div class="logoFinal">
+        <div class="circulo">
+            <div class="circle">
+                <img src="Sin título-1.png" alt="logoFondoNegro" class="logoFooter">
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+
 </html>
